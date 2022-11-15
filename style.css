@@ -45,6 +45,19 @@ body {
     letter-spacing: 0.02em;
     color: #D6D6D6;
 }
+/* Ломаная стилизация стрелки, или танцы с бубном*/
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:not([multiple]) {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+    background-size: 0.85em auto;
+    background-image: url("icons/vector.png");
+}
 
 .orders__select {
     min-width: 248px;
@@ -57,10 +70,26 @@ body {
     letter-spacing: 0.02em;
     color: #D6D6D6;
     padding: 8px 10px 8px 26px;
-    background: url(icons/call.svg) 5% 50% no-repeat;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
+
+.sel__wrapper{
+    position: relative;
+}
+
+.sel__wrapper span {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: url(icons/call.svg);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
 
 .orders__select:hover {
     background-color: #242323;
