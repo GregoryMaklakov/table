@@ -13,22 +13,26 @@ a {
 
 body {
     background: #1B1B1B;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.orders {
+    border-radius: 8px;
+    max-width: 1302px;
+    background: #1E1E1E;
+    margin: 32px auto;
 }
 
 .orders__container {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1302px;
     max-height: 90vh;
     overflow: hidden;
     overflow-y: auto;
     padding-bottom: 30px;
 }
 
-.orders {
-    background: #1E1E1E;
-    margin: 32px;
-    border-radius: 8px;
-}
+
 
 .orders__header {
     padding: 18px 24px 24px 24px;
@@ -111,7 +115,7 @@ select:not([multiple]) {
     background: #252525;
     height: 48px;
     position: sticky;
-    top: 0;
+    top: -1px;
     width: 100%;
 }
 
@@ -132,6 +136,9 @@ select:not([multiple]) {
 .orders__item:nth-of-type(4) {
     text-align: left;
     padding-right: 24px;
+}
+.orders__item:nth-of-type(5) {
+    text-align: left;
 }
 
 .orders__item:nth-of-type(6) {
@@ -165,10 +172,14 @@ select:not([multiple]) {
     color: #D6D6D6;
 }
 
-.orders__item--body span {
+.status {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 4px;
-}
 
+}
+.status__icon {
+}
+.status__text {
+}
