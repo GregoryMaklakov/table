@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #1B1B1B;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.orders {
+    border-radius: 8px;
+    max-width: 1302px;
+    background: #1E1E1E;
+    margin: 32px auto;
+}
+
+.orders__container {
+    max-width: 1302px;
+    max-height: 90vh;
+    overflow: hidden;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+
+
+
+.orders__header {
+    padding: 18px 24px 24px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.orders__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    color: #D6D6D6;
+}
+/* Ломаная стилизация стрелки, или танцы с бубном*/
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select:not([multiple]) {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) 50%;
+    background-size: 0.85em auto;
+    background-image: url("icons/vector.png");
+}
+
+.orders__select {
+    min-width: 248px;
+    box-shadow: 0px 0px 0px 1px #6C6C6C;
+    border-radius: 6px;
+    background-color: inherit;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #D6D6D6;
+    padding: 8px 10px 8px 26px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.sel__wrapper{
+    position: relative;
+}
+
+.sel__wrapper span {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: url(icons/call.svg);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+
+.orders__select:hover {
+    background-color: #242323;
+}
+.orders__select:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 1px #D3BF0A;
+}
+
+.orders__table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 15px 24px;
+    position: relative;
+    height: 400px;
+}
+
+.orders__head {
+    background: #252525;
+    height: 48px;
+    position: sticky;
+    top: -1px;
+    width: 100%;
+}
+
+.orders__head .orders__item:first-of-type {
+    text-align: left;
+    padding-left: 24px;
+}
+
+.orders__item--body:first-of-type {
+    text-align: left;
+    padding-left: 34px;
+}
+
+.orders__item:nth-of-type(2) {
+    text-align: right;
+}
+
+.orders__item:nth-of-type(4) {
+    text-align: left;
+    padding-right: 24px;
+}
+.orders__item:nth-of-type(5) {
+    text-align: left;
+}
+
+.orders__item:nth-of-type(6) {
+    text-align: right;
+    padding-right: 24px;
+}
+
+.orders__item {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #B3B3B3;
+    width: calc(100% / 6);
+}
+
+.orders__row--body {
+    height: 48px;
+    background: #1E1E1E;
+    border-bottom: 1px solid #252525;
+}
+.orders__row--body:hover {
+    background: #3D2C1C;
+}
+
+.orders__item--body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #D6D6D6;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+
+}
+.status__icon {
+}
+.status__text {
+}
